@@ -1,4 +1,8 @@
 # im-portfolio
+
+![Alt text](/assets/Website1.png "Website Example")
+https://irimeroi.github.io/im-portfolio/
+
 ## Description
 
 This project contains my portfolio. It includes a little description about me, my contact information, and the links to repositories/websites I worked on.
