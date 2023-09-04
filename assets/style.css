@@ -1,12 +1,12 @@
 :root {
-    --dark:rgb(8, 10, 70);
-    --light: rgb(225, 112, 238);
+    --dark: rgb(253, 211, 189);
+    --light: rgb(130, 149, 121);
 }
 
 * {
     color: white;
-    outline: 1px solid red;
-    font-family:'Courier New', Courier, monospace;
+    /* outline: 1px solid red; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
     background-color: var(--dark);
     padding: 0;
     margin: 0;
@@ -27,8 +27,9 @@ header h1 {
     color: white;
     padding: 10px;
     margin: 10px;
-    padding-left: 10px;
+    margin-left: -10px;
     border: 3px;
+    background-color: var(--light);
 }
 
 header nav ul {
@@ -39,19 +40,30 @@ header nav ul li {
     display: flex;
     justify-content: end;
     font-size: 20px;
+    font-weight: bold;
     list-style-type: none;
     margin-left: 10px;
 }
 
 .main-pic {
-    display: block;
-    background-image: url(./Screenshot\ 2023-08-30\ at\ 9.10.26\ PM.png);
-    width: 100%;
+    background-image: url(./Screenshot\ 2023-09-03\ at\ 7.37.53\ PM.png);
+    display: inline-block;
+    width: 89%;
+    height: 150px;
+}
+
+.my-picture {
+    background-image: url(./Screenshot\ 2023-09-03\ at\ 7.53.24\ PM.png);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    width: 10%;
     height: 150px;
 }
 
 section {
     display: flex;
+    margin: 15px;
 }
 
 main section h2 {
@@ -59,52 +71,70 @@ main section h2 {
     flex-basis: 25%;
     justify-content: end;
     margin: 10px;
+    padding: 5px;
+    border-right: solid var(--light);
+    font-size: 30px;
     }
 
 main section div {
     display: flex;
     flex-basis: 75%;
     flex-wrap: wrap;
+    margin: 10px;
 }
 
 main section div a {
     display: inline;
 }
 
-.horiseon-website {
+#horiseon-website {
     background-image: url(./digital-marketing-meeting.jpg);
+    position: relative;
+    flex-basis: 98%;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+#sunset {
+    background-image: url(./Sunset.png);
+}
+
+#bariloche {
+    background-image: url(./Bariloche.png);
+}
+
+#hawaii {
+    background-image: url(./Hawaii.png);
+}
+
+#perito-moreno {
+    background-image: url(./Perito\ Moreno.png);
+}
+
+.projects {
     background-size: cover;
     background-position: center;
-    flex-basis: 100%;
+    flex: 1 0 48%;
+    margin: 0.5rem;
     height: 20rem;
 }
 
-.image1 {
-    flex-basis: 50%;
-    height: 20rem;
-}
-
-.image2 {
-    flex-basis: 50%;
-    height: 20rem;
-}
-
-.image3 {
-    flex-basis: 50%;
-    height: 20rem;
-}
-
-.image4 {
-    flex-basis: 50%;
-    height: 20rem;
+.title {
+    display: inline-block;
+    background-color: var(--dark);
+    padding: 5px 10px;
+    position: initial;
+    right: 10px;
+    bottom: 20px;
 }
 
 .contact-info {
     display: flex;
     flex-basis: 75%;
     justify-content: space-evenly;
-    list-style-type: georgian;
-    font-size: 1em;
+    align-items: center;
+    list-style-type: lower-greek;
+    font-size: 1.2em;
 }
 
 footer {
